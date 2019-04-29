@@ -1,2 +1,2 @@
-#!/usr/local/bin/node node
+#!/usr/bin/env node
 console.log('Welcome to the Brain Games!');
