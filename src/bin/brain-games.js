@@ -1,6 +1,4 @@
 #!/usr/bin/env node
-import askUserName from '..';
+import { getName } from '../index';
 
-console.log('Welcome to the Brain Games!');
-
-askUserName();
+getName();
