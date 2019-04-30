@@ -4,4 +4,4 @@
 </p>
 
 <h2>Brain-even demo</h2>
-<script id="asciicast-3f9glTb7blEi42ggTAmtfn50L" src="https://asciinema.org/a/3f9glTb7blEi42ggTAmtfn50L.js" async></script>
+<a href="https://asciinema.org/a/3f9glTb7blEi42ggTAmtfn50L" target="_blank"><img src="https://asciinema.org/a/3f9glTb7blEi42ggTAmtfn50L.svg" /></a>
