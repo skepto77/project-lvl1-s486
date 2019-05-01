@@ -5,3 +5,6 @@
 
 <h2>Brain-even demo</h2>
 <a href="https://asciinema.org/a/3f9glTb7blEi42ggTAmtfn50L" target="_blank"><img src="https://asciinema.org/a/3f9glTb7blEi42ggTAmtfn50L.svg" /></a>
+
+<h2>Brain-calc demo</h2>
+<a href="https://asciinema.org/a/bgKfGAo4AD7tuKGXsVLPbFjez" target="_blank"><img src="https://asciinema.org/a/bgKfGAo4AD7tuKGXsVLPbFjez.svg" /></a>
