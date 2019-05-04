@@ -8,3 +8,6 @@
 
 <h2>Brain-calc demo</h2>
 <a href="https://asciinema.org/a/bgKfGAo4AD7tuKGXsVLPbFjez" target="_blank"><img src="https://asciinema.org/a/bgKfGAo4AD7tuKGXsVLPbFjez.svg" /></a>
+
+<h2>Brain-gcd demo</h2>
+<a href="https://asciinema.org/a/YJUotdw34D3mME2WVvBHaE01N" target="_blank"><img src="https://asciinema.org/a/YJUotdw34D3mME2WVvBHaE01N.svg" /></a>
