@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import { getName } from '../index';
+import getName from '..';
 
 getName();
