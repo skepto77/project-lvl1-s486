@@ -11,7 +11,7 @@ const getName = () => {
 };
 
 const runGame = (gameRules, getDataGame) => {
-  console.log(`Welcome to the Brain Games!\n${gameRules}.\n`);
+  console.log(`Welcome to the Brain Games!\n${gameRules}\n`);
   const userName = getName();
   for (let i = 1; i <= numberOfRounds; i += 1) {
     const data = getDataGame();
