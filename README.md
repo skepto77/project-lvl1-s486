@@ -14,3 +14,6 @@
 
 <h2>Brain-progression demo</h2>
 <a href="https://asciinema.org/a/244355" target="_blank"><img src="https://asciinema.org/a/244355.svg" /></a>
+
+<h2>Brain-prime demo</h2>
+<a href="https://asciinema.org/a/hwX4RI4UJO6YfivqOySYbwb2F" target="_blank"><img src="https://asciinema.org/a/hwX4RI4UJO6YfivqOySYbwb2F.svg" /></a>
