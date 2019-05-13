@@ -2,12 +2,12 @@ import { runGame, getRandomInt } from '..';
 
 const gameRules = 'Answer "yes" if number even otherwise answer "no".';
 
+const isEven = value => value % 2 === 0;
+
 const getDataGame = () => {
-  const result = [];
-  result.question = getRandomInt();
-  result.currentAnswer = result.question % 2 === 0 ? 'yes' : 'no';
-  return result;
+  const question = getRandomInt();
+  const currentAnswer = isEven(question) ? 'yes' : 'no';
+  return [question, currentAnswer];
 };
 
-runGame(gameRules, getDataGame);
-export default getDataGame;
+export default () => runGame(gameRules, getDataGame);

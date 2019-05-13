@@ -7,11 +7,9 @@ const gcd = (a, b) => ((b === 0) ? a : gcd(b, a % b));
 const getDataGame = () => {
   const numberOne = getRandomInt();
   const numberTwo = getRandomInt();
-  const result = [];
-  result.currentAnswer = gcd(numberOne, numberTwo);
-  result.question = `${numberOne} ${numberTwo}`;
-  return result;
+  const currentAnswer = String(gcd(numberOne, numberTwo));
+  const question = `${numberOne} ${numberTwo}`;
+  return [question, currentAnswer];
 };
 
-runGame(gameRules, getDataGame);
-export default getDataGame;
+export default () => runGame(gameRules, getDataGame);

@@ -2,25 +2,26 @@ import { runGame, getRandomInt } from '..';
 
 const gameRules = 'What number is missing in the progression?';
 
-const getDataGame = () => {
-  const result = [];
-  const numberOfElements = 10;
-  const randomPosition = getRandomInt(0, numberOfElements);
-  const currentAnswerTmp = [];
+const numberOfElements = 10;
+
+const getProgression = () => {
+  const progression = [];
   let progressionValue = getRandomInt();
   const progressionСounter = getRandomInt();
-
   for (let i = 0; i < numberOfElements; i += 1) {
-    currentAnswerTmp.push(progressionValue);
+    progression.push(progressionValue);
     progressionValue += progressionСounter;
   }
-
-  result.currentAnswer = currentAnswerTmp[randomPosition];
-  currentAnswerTmp.splice(randomPosition, 1, '..');
-  result.question = `${currentAnswerTmp.join(' ')}`;
-
-  return result;
+  return progression;
 };
 
-runGame(gameRules, getDataGame);
-export default getDataGame;
+const getDataGame = () => {
+  const progression = getProgression();
+  const randomPosition = getRandomInt(0, numberOfElements - 1);
+  const currentAnswer = String(progression[randomPosition]);
+  progression.splice(randomPosition, 1, '..');
+  const question = `${progression.join(' ')}`;
+  return [question, currentAnswer];
+};
+
+export default () => runGame(gameRules, getDataGame);
