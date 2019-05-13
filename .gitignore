@@ -2,3 +2,4 @@
 .DS_Store
 dist
 .vscode/launch.json
+*.log
