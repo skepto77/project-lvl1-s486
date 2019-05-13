@@ -1,12 +1,12 @@
 {
   "name": "brain-games-2904",
-  "version": "1.0.9",
+  "version": "1.1.0",
   "description": "Project Brain Games",
   "keywords": [
     "hexlet",
     "brain-games"
   ],
-  "main": "index.js",
+  "main": "",
   "bin": {
     "brain-games": "dist/bin/brain-games.js",
     "brain-even": "dist/bin/brain-even.js",
