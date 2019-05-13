@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-import { gameRules, getDataGame } from '../games/prime';
-import { runGame } from '..';
+import run from '../games/prime';
 
-runGame(gameRules, getDataGame);
+run();

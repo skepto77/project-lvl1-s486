@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import getDataGame from '../games/gcd';
+import run from '../games/gcd';
 
-getDataGame();
+run();
