@@ -1,6 +1,6 @@
 <h1>Brain Games</h1>
 <p>
-  
+<p><a href="https://codeclimate.com/github/skepto77/project-lvl1-s486/maintainability"><img src="https://api.codeclimate.com/v1/badges/9bb82157a5f224e0947c/maintainability" /></a>
 <a href="https://travis-ci.com/skepto77/project-lvl1-s486"><img src="https://travis-ci.com/skepto77/project-lvl1-s486.svg?branch=master"></a>
 </p>
 
