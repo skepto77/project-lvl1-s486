@@ -1,6 +1,7 @@
 <h1>Brain Games</h1>
 <p>
-<a href="https://travis-ci.com/skepto77/project-lvl1-s486"><img src="https://travis-ci.com/skepto77/project-lvl1-s486.svg?branch=master" /></a>
+  
+<a href="https://travis-ci.com/skepto77/project-lvl1-s486"><img src="https://travis-ci.com/skepto77/project-lvl1-s486.svg?branch=master"></a>
 </p>
 
 <h2>Brain-even demo</h2>
