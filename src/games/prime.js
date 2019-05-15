@@ -1,22 +1,22 @@
-import { runGame, getRandomInt } from '..';
+import runGame from '..';
+import getRandomInt from '../utils';
 
-const gameRules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+const gameDescription = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 const isPrime = (value) => {
-  let result = (value < 2) ? 'no' : 'yes';
+  if (value < 2) return false;
   for (let i = 2; i < value; i += 1) {
     if (value % i === 0) {
-      result = 'no';
+      return false;
     }
   }
-  return result;
+  return true;
 };
 
-const getDataGame = () => {
-  const value = getRandomInt();
-  const currentAnswer = isPrime(value);
-  const question = `${value}`;
+const getGameData = () => {
+  const question = getRandomInt();
+  const currentAnswer = isPrime(question) ? 'yes' : 'no';
   return [question, currentAnswer];
 };
 
-export default () => runGame(gameRules, getDataGame);
+export default () => runGame(gameDescription, getGameData);

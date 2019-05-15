@@ -1,16 +1,22 @@
-import { runGame, getRandomInt } from '..';
+import runGame from '..';
+import getRandomInt from '../utils';
 
-const gameRules = 'What is the result of the expression?';
+const gameDescription = 'What is the result of the expression?';
 
-const getDataGame = () => {
+const operations = [
+  { sign: '+', expression: (a, b) => a + b },
+  { sign: '-', expression: (a, b) => a - b },
+  { sign: '*', expression: (a, b) => a * b },
+];
+
+const getGameData = () => {
   const numberOne = getRandomInt();
   const numberTwo = getRandomInt();
-  const operators = ['+', '-', '*'];
-  const expression = [numberOne + numberTwo, numberOne - numberTwo, numberOne * numberTwo];
-  const getRandomOperator = getRandomInt(0, operators.length - 1);
-  const question = `${numberOne} ${operators[getRandomOperator]} ${numberTwo}`;
-  const currentAnswer = String(expression[getRandomOperator]);
+  const randomOperation = getRandomInt(0, operations.length - 1);
+  const { sign, expression } = operations[randomOperation];
+  const currentAnswer = String(expression(numberOne, numberTwo));
+  const question = `${numberOne} ${sign} ${numberTwo}`;
   return [question, currentAnswer];
 };
 
-export default () => runGame(gameRules, getDataGame);
+export default () => runGame(gameDescription, getGameData);
